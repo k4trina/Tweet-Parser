@@ -42,9 +42,10 @@ for line in tweets_input:
         median = float(unique_words_list[index_lower]+unique_words_list[index_upper])/float(2)
         #Python version compatibility - cast denominator to floating point to ensure output is also floating point
 
-    # Save updated median to output file
-    stats_output.write("%s\n" % median)
-
+    # Save updated median to output file (each median has 2 decimal points)
+    stats_output.write('%.2f' % median + '\n')
+	    
+	    
 # Close input/output file streams
 tweets_input.close()
 stats_output.close()
