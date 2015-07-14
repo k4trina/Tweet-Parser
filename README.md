@@ -8,7 +8,7 @@ Programming Langugage: Python
 
 The tweet parser is comprised of the following two features:
 * Calculates total number of times each word appears in tweets
-* Calculates median number of unique words per tweet, and maintains rolling median as tweets come in
+* Calculates median number of unique words per tweet, and maintains running median as tweets come in. The running median is a double with 2 decimal points, as per original instructions in FAQ.
 
 The tweet parser is executed by running the run.sh script, which reads the tweet input file from the ./tweet_input directory, and outputs the results of each feature to the ./tweet_output directory. 
 
